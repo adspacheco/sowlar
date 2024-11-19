@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Sowlar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .form-control,
+        .form-select {
+            background-color: #212529 !important;
+            border-color: rgba(255,255,255,0.1) !important;
+            color: white !important;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background-color: #212529 !important;
+            border-color: #0d6efd !important;
+            box-shadow: none !important;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .form-select option {
+            background-color: #212529;
+            color: white;
+        }
+
+        .form-floating label {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .form-check-input {
+            background-color: #212529;
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .form-check-input:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+        .invalid-feedback {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-black text-light">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 fixed-top backdrop-blur">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.svg" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="pontos.html">Pontos de Recarga</a>
+                    </li>
+                </ul>
+                <a href="contato.html"  class="btn btn-outline-light rounded-pill px-4 py-2">
+                    Fale Conosco <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="min-vh-100 pt-5 mt-4">
+        <div class="container py-5">
+            <!-- Header Section -->
+            <div class="row mb-5 text-center pt-4">
+                <div class="col-lg-8 mx-auto">
+                    <h6 class="text-primary text-uppercase mb-3">Contato</h6>
+                    <h1 class="display-4 text-white fw-bold mb-4">Fale Conosco</h1>
+                    <p class="lead text-white-50">Entre em contato e faça parte da revolução da energia limpa</p>
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card bg-dark border-0 rounded-4 shadow-lg">
+                        <div class="card-body p-4 p-md-5">
+                            <!-- Success Message -->
+                            <div id="successMessage" class="text-center py-5" style="display: none;">
+                                <div class="mb-4">
+                                    <i class="bi bi-check-circle-fill text-primary display-1"></i>
+                                </div>
+                                <h2 class="text-white mb-4">Mensagem Enviada!</h2>
+                                <p class="text-white-50 mb-4">Agradecemos seu contato. Em breve nossa equipe entrará em contato.</p>
+                                <button type="button" class="btn btn-primary rounded-pill px-4 py-2" onclick="resetForm()">
+                                    Enviar Nova Mensagem
+                                </button>
+                            </div>
+
+                            <!-- Contact Form -->
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row g-4">
+                                    <!-- Dados Pessoais -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                                            <label for="nome">Nome Completo</label>
+                                            <div class="invalid-feedback">
+                                                Por favor, informe seu nome
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                                            <label for="email">E-mail</label>
+                                            <div class="invalid-feedback">
+                                                Por favor, informe um e-mail válido
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Telefone e Interesse -->
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone" required>
+                                            <label for="telefone">Telefone</label>
+                                            <div class="invalid-feedback">
+                                                Por favor, informe seu telefone
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="interesse" required>
+                                                <option selected disabled value="">Selecione...</option>
+                                                <option value="ponto_recarga">Quero ser um Ponto de Recarga</option>
+                                                <option value="veiculo">Financiamento de Veículo Elétrico</option>
+                                                <option value="info">Mais Informações</option>
+                                            </select>
+                                            <label for="interesse">Seu Interesse</label>
+                                            <div class="invalid-feedback">
+                                                Por favor, selecione seu interesse
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tipo de Estabelecimento -->
+                                    <div class="col-12" id="tipoEstabelecimento" style="display: none;">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="estabelecimento">
+                                                <option selected disabled value="">Selecione...</option>
+                                                <option value="comercio">Comércio</option>
+                                                <option value="shopping">Shopping Center</option>
+                                                <option value="estacionamento">Estacionamento</option>
+                                                <option value="posto">Posto de Combustível</option>
+                                                <option value="outro">Outro</option>
+                                            </select>
+                                            <label for="estabelecimento">Tipo de Estabelecimento</label>
+                                            <div class="invalid-feedback">
+                                                Por favor, selecione o tipo de estabelecimento
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mensagem -->
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="mensagem" style="height: 150px" placeholder="Sua mensagem" required></textarea>
+                                            <label for="mensagem">Mensagem</label>
+                                            <div class="invalid-feedback">
+                                                Por favor, escreva sua mensagem
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Aceite de Termos -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="termos" required>
+                                            <label class="form-check-label text-white-50" for="termos">
+                                                Concordo em receber comunicações e aceito a política de privacidade
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Você precisa aceitar os termos para continuar
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botão de Envio -->
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 py-3">
+                                            Enviar Mensagem <i class="bi bi-send ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark mt-auto border-top border-dark">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Sobre Nós</h5>
+                    <p class="text-white-50 mb-0">Energia solar impulsionando negócios</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Links Úteis</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Termos de Uso</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white mb-3">Contato</h5>
+                    <ul class="list-unstyled mb-0 text-white-50">
+                        <li class="mb-2">Email: contato@empresa.com</li>
+                        <li class="mb-2">Telefone: (11) 1234-5678</li>
+                        <li>Endereço: Rua Exemplo, 123</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        // Validação e envio do formulário
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+
+            // Se passou pela validação, esconde o form e mostra mensagem de sucesso
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+        });
+
+        // Mostra/esconde campo de tipo de estabelecimento
+        document.getElementById('interesse').addEventListener('change', function() {
+            const tipoEstabelecimento = document.getElementById('tipoEstabelecimento');
+            if (this.value === 'ponto_recarga') {
+                tipoEstabelecimento.style.display = 'block';
+                document.getElementById('estabelecimento').required = true;
+            } else {
+                tipoEstabelecimento.style.display = 'none';
+                document.getElementById('estabelecimento').required = false;
+            }
+        });
+
+        // Função para resetar o formulário
+        function resetForm() {
+            form.reset();
+            form.classList.remove('was-validated');
+            form.style.display = 'block';
+            successMessage.style.display = 'none';
+            document.getElementById('tipoEstabelecimento').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
