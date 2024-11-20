@@ -1,195 +1,240 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serviços - Energia Solar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-</head>
-<body class="d-flex flex-column min-vh-100 bg-black text-light">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-black text-light">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 fixed-top backdrop-blur">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="logo.svg" alt="Logo" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto gap-4">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light active" href="#como-funciona">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="pontos.html">Pontos de Recarga</a>
-                    </li>
-                </ul>
-                <a href="contato.html" class="btn btn-outline-light rounded-pill px-4 py-2">
-                    Fale Conosco <i class="bi bi-arrow-right ms-2"></i>
-                </a>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 fixed-top backdrop-blur"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.svg" alt="Logo" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-4">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light active" href="#como-funciona"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pontos.html"
+                >Pontos de Recarga</a
+              >
+            </li>
+          </ul>
+          <a
+            href="contato.html"
+            class="btn btn-outline-light rounded-pill px-4 py-2"
+          >
+            Fale Conosco <i class="bi bi-arrow-right ms-2"></i>
+          </a>
         </div>
+      </div>
     </nav>
 
     <!-- Main Section -->
     <section class="min-vh-100 pt-5 mt-4">
-        <div class="container py-5">
-            <!-- Header Section -->
-            <div class="row mb-5 text-center pt-4">
-                <div class="col-lg-8 mx-auto">
-                    <h6 class="text-primary text-uppercase mb-3">Nossos Serviços</h6>
-                    <h1 class="display-4 fw-bold mb-4">Energia Limpa Para Todos</h1>
-                    <p class="lead text-light-emphasis mb-0">Construindo a maior rede de recarga sustentável do Brasil</p>
-                </div>
-            </div>
-
-            <!-- Main Pillars -->
-            <div class="row g-4 mb-5">
-                <!-- Pillar 1: Pontos de Recarga -->
-                <div class="col-lg-6">
-                  <div class="card h-100 bg-dark border-0 rounded-4 shadow-lg">
-                    <div class="card-body p-5">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-4">
-                                <i class="bi bi-battery-charging text-primary display-6"></i>
-                            </div>
-                            <h3 class="card-title text-white mb-0">Pontos de Recarga</h3>
-                        </div>
-                        <p class="lead text-white mb-4">Transforme seu estabelecimento em um ponto de recarga</p>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-3 d-flex align-items-center text-white">
-                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                Instalação completa de painéis solares
-                            </li>
-                            <li class="mb-3 d-flex align-items-center text-white">
-                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                Sistema de recarga integrado
-                            </li>
-                            <li class="mb-3 d-flex align-items-center text-white">
-                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                Financiamento facilitado
-                            </li>
-                            <li class="d-flex align-items-center text-white">
-                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                Renda extra garantida
-                            </li>
-                        </ul>
-                        <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Pillar 2: Veículos Elétricos -->
-                <div class="col-lg-6">
-                    <div class="card h-100 bg-dark border-0 rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <div class="d-flex align-items-center mb-4">
-                                <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-4">
-                                    <i class="bi bi-car-front text-primary display-6"></i>
-                                </div>
-                                <h3 class="card-title text-white mb-0">Veículos Elétricos</h3>
-                            </div>
-                            <p class="lead mb-4 text-white">Financie seu veículo elétrico com acesso à rede Sowlar</p>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-3 d-flex align-items-center text-white">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    Diversos modelos disponíveis
-                                </li>
-                                <li class="mb-3 d-flex align-items-center text-white">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    Condições especiais
-                                </li>
-                                <li class="mb-3 d-flex align-items-center text-white">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    Documentação simplificada
-                                </li>
-                                <li class="d-flex align-items-center text-white">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    Benefícios exclusivos na rede
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Numbers Section -->
-            <div class="row g-4 mb-5">
-                <div class="col-md-4">
-                    <div class="card bg-dark border-0 rounded-4 shadow-lg">
-                        <div class="card-body p-4 text-center">
-                            <i class="bi bi-plug display-4 text-primary mb-3"></i>
-                            <h2 class="fw-bold mb-2 text-light">+500</h2>
-                            <p class="text-light-emphasis mb-0">Pontos de Recarga</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card bg-dark border-0 rounded-4 shadow-lg">
-                        <div class="card-body p-4 text-center">
-                            <i class="bi bi-geo-alt display-4 text-primary mb-3"></i>
-                            <h2 class="fw-bold mb-2 text-light">50</h2>
-                            <p class="text-light-emphasis mb-0">Cidades Atendidas</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card bg-dark border-0 rounded-4 shadow-lg">
-                        <div class="card-body p-4 text-center">
-                            <i class="bi bi-car-front display-4 text-primary mb-3"></i>
-                            <h2 class="fw-bold mb-2 text-light">2.000</h2>
-                            <p class="text-light-emphasis mb-0">Veículos Financiados</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA -->
-            
+      <div class="container py-5">
+        <!-- Header Section -->
+        <div class="row mb-5 text-center pt-4">
+          <div class="col-lg-8 mx-auto">
+            <h6 class="text-primary text-uppercase mb-3">Nossos Serviços</h6>
+            <h1 class="display-4 fw-bold mb-4">Energia Limpa Para Todos</h1>
+            <p class="lead text-light-emphasis mb-0">
+              Construindo a maior rede de recarga sustentável do Brasil
+            </p>
+          </div>
         </div>
+
+        <!-- Main Pillars -->
+        <div class="row g-4 mb-5">
+          <!-- Pillar 1: Pontos de Recarga -->
+          <div class="col-lg-6">
+            <div class="card h-100 bg-dark border-0 rounded-4 shadow-lg">
+              <div class="card-body p-5">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-4">
+                    <i
+                      class="bi bi-battery-charging text-primary display-6"
+                    ></i>
+                  </div>
+                  <h3 class="card-title text-white mb-0">Pontos de Recarga</h3>
+                </div>
+                <p class="lead text-white mb-4">
+                  Transforme seu estabelecimento em um ponto de recarga
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Instalação completa de painéis solares
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Sistema de recarga integrado
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Financiamento facilitado
+                  </li>
+                  <li class="d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Renda extra garantida
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary rounded-pill px-4 py-2"
+                  >Saiba Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Veículos Elétricos -->
+          <div class="col-lg-6">
+            <div class="card h-100 bg-dark border-0 rounded-4 shadow-lg">
+              <div class="card-body p-5">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-3 me-4">
+                    <i class="bi bi-car-front text-primary display-6"></i>
+                  </div>
+                  <h3 class="card-title text-white mb-0">Veículos Elétricos</h3>
+                </div>
+                <p class="lead mb-4 text-white">
+                  Financie seu veículo elétrico com acesso à rede Sowlar
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Diversos modelos disponíveis
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Condições especiais
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Documentação simplificada
+                  </li>
+                  <li class="d-flex align-items-center text-white">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Benefícios exclusivos na rede
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary rounded-pill px-4 py-2"
+                  >Saiba Mais</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Numbers Section -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="card bg-dark border-0 rounded-4 shadow-lg">
+              <div class="card-body p-4 text-center">
+                <i class="bi bi-plug display-4 text-primary mb-3"></i>
+                <h2 class="fw-bold mb-2 text-light">+500</h2>
+                <p class="text-light-emphasis mb-0">Pontos de Recarga</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card bg-dark border-0 rounded-4 shadow-lg">
+              <div class="card-body p-4 text-center">
+                <i class="bi bi-geo-alt display-4 text-primary mb-3"></i>
+                <h2 class="fw-bold mb-2 text-light">50</h2>
+                <p class="text-light-emphasis mb-0">Cidades Atendidas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card bg-dark border-0 rounded-4 shadow-lg">
+              <div class="card-body p-4 text-center">
+                <i class="bi bi-car-front display-4 text-primary mb-3"></i>
+                <h2 class="fw-bold mb-2 text-light">2.000</h2>
+                <p class="text-light-emphasis mb-0">Veículos Financiados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark mt-auto border-top border-dark">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-md-4">
-                    <h5 class="mb-3">Sobre Nós</h5>
-                    <p class="mb-0 text-light-emphasis">Energia solar impulsionando negócios</p>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="mb-3">Links Úteis</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Política de Privacidade</a></li>
-                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Termos de Uso</a></li>
-                        <li><a href="#" class="text-light-emphasis text-decoration-none">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="mb-3">Contato</h5>
-                    <ul class="list-unstyled mb-0 text-light-emphasis">
-                        <li class="mb-2">Email: contato@empresa.com</li>
-                        <li class="mb-2">Telefone: (11) 1234-5678</li>
-                        <li>Endereço: Rua Exemplo, 123</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h5 class="mb-3">Sobre Nós</h5>
+            <p class="mb-0 text-light-emphasis">
+              Energia solar impulsionando negócios
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Links Úteis</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="text-light-emphasis text-decoration-none"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light-emphasis text-decoration-none"
+                  >Termos de Uso</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light-emphasis text-decoration-none"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Contato</h5>
+            <ul class="list-unstyled mb-0 text-light-emphasis">
+              <li class="mb-2">Email: contato@empresa.com</li>
+              <li class="mb-2">Telefone: (11) 1234-5678</li>
+              <li>Endereço: Rua Exemplo, 123</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
